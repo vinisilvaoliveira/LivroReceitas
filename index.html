@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato|Raleway|Quicksand" rel="stylesheet">
+	<title>Recipe Book App</title>
+	<meta name="description" content="Książka kucharska online">
+	<meta name="keywords" content="Recipe Book, gastronomy, recipes, book">
+</head>
+
+<body>
+	<div class="container__app">
+		<div class="container__add">
+			<img src="images/add.svg" alt="add">
+		</div>
+		<div class="container__add-modal modal">
+			<div class="modal__content">
+				<span class="content__close recipe-close">
+					&times;
+				</span>
+				<div class="content__title">
+					New Recipe
+				</div>
+				<form class="content__form">
+					<div class="form__title">
+						<div class="title__title">
+							Title
+						</div>
+						<input class="title__input" type="text">
+					</div>
+					<div class="form__ingredients form-textarea">
+						<div class="ingredient">
+							<div class="ingredient__title">
+								Ingredients
+							</div>
+							<textarea class="ingredient__input"
+								placeholder="Press Enter or type </br> to start new line.">
+    							</textarea>
+						</div>
+					</div>
+					<div class="form__directions form-textarea">
+						<div class="ingredient">
+							<div class="directions__modal-title">
+								Directions
+							</div>
+							<textarea class="directions__input"
+								placeholder="Press Enter or type </br> to start new line.">
+    							</textarea>
+						</div>
+					</div>
+					<div class="form__url">
+						<div class="url__title">
+							Optional Url To Image
+						</div>
+						<input class="url__input" type="text"
+							placeholder="You can past here optional image of dish for example: https://food-images.co.uk/fish_dish_16x9.jpg">
+					</div>
+				</form>
+				<footer class="content__footer">
+					<div class="modal__information">
+						You Must To Complete All Red Inputs
+					</div>
+					<div class="content__button">
+						Add Recipe
+					</div>
+				</footer>
+			</div>
+		</div>
+		<div class="container__edit-modal modal">
+			<div class="modal__content">
+				<span class="content__close edit-modal__close">
+					&times;
+				</span>
+				<div class="content__title">
+					Edit Recipe
+				</div>
+				<form class="content__form">
+					<div class="form__title">
+						<div class="title__title">
+							Title
+						</div>
+						<input class="title__input edit-title__input" type="text">
+					</div>
+					<div class="form__ingredients form-textarea">
+						<div class="ingredient">
+							<div class="ingredient__title">
+								Ingredients
+							</div>
+							<textarea class="ingredient__input edit-ingredient__input"
+								placeholder="Write in this place ingredients. Press Enter or type </br> to start new line.">
+    							</textarea>
+						</div>
+					</div>
+					<div class="form__directions form-textarea">
+						<div class="ingredient">
+							<div class="directions__modal-title">
+								Directions
+							</div>
+							<textarea class="directions__input edit-directions__input"
+								placeholder="Press Enter or type </br> to start new line.">
+    							</textarea>
+						</div>
+					</div>
+					<div class="form__url">
+						<div class="url__title">
+							Optional Url To Image
+						</div>
+						<input class="url__input edit-url__input" type="text"
+							placeholder="You can past here optional image of dish for example: https://food-images.co.uk/fish_dish_16x9.jpg">
+					</div>
+				</form>
+				<footer class="content__footer">
+					<div class="modal__information">
+						You Must To Complete All Red Inputs
+					</div>
+				</footer>
+			</div>
+		</div>
+		<div class="app__search">
+			<input type="text" class="search__input" placeholder="Search Recipe. Clear To Show All Recipes">
+			<img src="images/loupe.svg" alt="" class="search__icon">
+		</div>
+		<img src="images/menu.png" class="app__hamburger-menu">
+		<div class="menu-overlay">
+			<div class="overlay-content">
+				<span class="overlay-content__add-recipes overlay-content__element">
+					Recipes
+				</span>
+				<span class="overlay-content__shopping-list overlay-content__element">
+					Shopping List
+				</span>
+				<span class="overlay-content__favorites overlay-content__element">
+					Favorites
+				</span>
+				<span class="overlay-content__search-navbar overlay-content__element">
+					<input type="text" placeholder="Clear To Show All Recipes Again">
+					<img src="images/search.svg" alt="search">
+					<span class="search-navbar__button">
+						Search
+					</span>
+					<span class="search-navbar__information">
+						Clear Input To Show All Recipes Again
+					</span>
+				</span>
+			</div>
+		</div>
+		<div class="app__title">
+			<p>Recipe Book App</p>
+		</div>
+		<div class="app__section-navbar">
+			<div class="section-navbar__title">
+				<p>Recipes</p>
+			</div>
+			<div class="section-navbar__buttons">
+				<div class="buttons__button recipes-button">
+					<img src="images/book.svg" alt="recipes">
+					Recipes
+				</div>
+				<div class="buttons__button shopping-list-button">
+					<img src="images/letter.svg" alt="shopping list">
+					Shopping List
+				</div>
+				<div class="buttons__button favorites-button">
+					<img src="images/like.svg" alt="favorites">
+					Favorites
+				</div>
+			</div>
+		</div>
+		<div class="app__body app__recipes">
+			<div class="body__recipe">
+				<div class="recipe__title">
+					Spaghetti
+				</div>
+				<div class="recipe__content">
+					<div class="content">
+						<div class="content__img"></div>
+						<div class="content__text">
+							<div class="text__ingredients">
+								<div class="ingredients__title">
+									Ingredients:
+								</div>
+								<div class="ingredients__list">
+									300 ml of tomato passata <br>
+									300mg of ground beef <br>
+									300g of spaghetii pasta <br>
+									1 tablespoon of tomato noodles <br>
+									1 small onion
+								</div>
+							</div>
+							<div class="text__directions">
+								<div class="directions__title">
+									Directions:
+								</div>
+								<div class="directions__text">
+									1. Aqueça uma colher de sopa de azeite em uma frigideira funda. <br>
+									2. Coloque o alho e a cebola na frigideira quente e, depois de um tempo, adicione a
+									carne,
+									esmague-os com um garfo, por exemplo, para que não se formem pedaços grossos <br>
+									3. Adicione as ervas e concentre-se na carne. Aqueça o todo por um momento, adicione
+									Passata (purê de tomate), cozinhe em fogo baixo por cerca de 30 minutos. <br>
+									4. Cozinhe o macarrão al dente, sirva com molho, queijo e manjericão.
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="content__icons"></div>
+				</div>
+			</div>
+		</div>
+		<!-- SHOPPING LIST SECTION -->
+		<div class="app__shopping-list">
+			<div class="body__title">
+				Add Item To Shopping List
+			</div>
+			<form class="body__form">
+				<div class="form__ingredient">
+					Ingredient
+					<input class="ingredient__shop-list" type="text" placeholder="Ingredient" maxlength='20'>
+				</div>
+				<div class="form__amount">
+					Amount
+					<input class="amount__shop-list" type="text" placeholder="Amount" maxlength='3'>
+				</div>
+				<div class="validate-information">
+					You Must Correctly Complete All Red Inputs
+				</div>
+				<div class="form__button">
+					Add Item
+				</div>
+			</form>
+			<div class="body__shopping-list">
+				<div class="shopping-list__element">
+					<img src="images/cart.svg" alt="cart">
+					<div class="element__data">
+						<div class="element__name">
+							
+							Shopping cart
+						</div>
+						<div class="element__amount">
+							( 10 )
+						</div>
+					</div>
+					<img src="images/close.svg" alt="delete" class="delete-element">
+				</div>
+			</div>
+		</div>
+		<!-- FAVORITES SECTION-->
+		<div class="app__favorites">
+			<div class="favorites__recipe">
+				<div class="recipe__title">
+					Spaghetti
+				</div>
+				<div class="recipe__content">
+					<div class="content">
+						<div class="content__img"></div>
+						<div class="favorites__content">
+							<div class="text__ingredients">
+								<div class="ingredients__title">
+									Ingredients:
+								</div>
+								<div class="ingredients__list">
+									300 ml of tomato passata <br>
+									300mg of ground beef <br>
+									300g of spaghetii pasta <br>
+									1 tablespoon of tomato noodles <br>
+									1 small onion <br>
+								</div>
+							</div>
+							<div class="text__directions">
+								<div class="directions__title">
+									Directions:
+								</div>
+								<div class="directions__text">
+									1. Aqueça uma colher de sopa de azeite em uma frigideira funda. <br>
+									2. Coloque o alho e a cebola na frigideira quente e, depois de um tempo, adicione a
+									carne,
+									esmague-os com um garfo, por exemplo, para que não se formem pedaços grossos <br>
+									3. Adicione as ervas e concentre-se na carne. Aqueça o todo por um momento, adicione
+									Passata (purê de tomate), cozinhe em fogo baixo por cerca de 30 minutos. <br>
+									4. Cozinhe o macarrão al dente, sirva com molho, queijo e manjericão.
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="content__icons">
+						<div class="favorites__icon icons__unfavorite"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/recipe-modals.js"></script>
+	<script src="js/favorite-icon-toggle.js"></script>
+	<script src="js/navbar-sections.js"></script>
+	<script src="js/menu-mobile.js"></script>
+	<script src="js/recipe-statistics.js"></script>
+	<script src="js/controller-ui.js"></script>
+	<script src="js/dynamics-elements-controller.js"></script>
+	<script src="js/favorite-controller.js"></script>
+	<script src="js/shoppinglist-controller.js"></script>
+	<script src="js/search-engine.js"></script>
+	<script src="js/app.js"></script>
+</body>
+
+</html>
